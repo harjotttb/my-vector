@@ -1,13 +1,4 @@
 
-/**
- * TODO: Complete this class!
- * Name: Harjot Bhangu
- * CWID: 828073312
- * Email: harjottb@csu.fullerton.edu
- */
-
-
-/// Your welcome
 #include <assert.h>
 #include <iostream>
 #include <string>
@@ -155,12 +146,7 @@ namespace CPSC131::MyVector
 			/***********
 			 * Mutators
 			 ***********/
-			
-			/**
-			 * Reserve capacity in advance, if our capacity isn't currently large enough.
-			 * Useful if we know we're about to add a large number of elements,
-			 *   and we'd like to avoid the overhead of many internal changes to capacity.
-			 */
+
 			void reserve(size_t capacity)
 			{
 				if (capacity < size_){
@@ -258,13 +244,6 @@ namespace CPSC131::MyVector
 			
 			/**
 			 * Insert an element at some index in our vector
-			 * 
-			 * Example:
-			 * 	 Insert a 9 at index 2
-			 *   Contents before: [6, 2, 7, 4, 3]
-			 *   Contents after:  [6, 2, 9, 7, 4, 3]
-			 * 
-			 * Returns a reference to the newly added element (not the original).
 			 */
 			T& insert(size_t index, const T& element)
 			{
@@ -288,16 +267,6 @@ namespace CPSC131::MyVector
 			
 			/**
 			 * Erase one element in our vector at the specified index
-			 * 
-			 * Throws std::range_error if the index is out of bounds.
-			 * 
-			 * Example:
-			 *   Erase index 2
-			 *   Contents before: [8, 4, 3, 9, 1]
-			 *   Contents after:  [8, 4, 9, 1]
-			 * 
-			 * Returns a copy of the erased element.
-			 * Hint: call DTOR on original after making the copy.
 			 */
 			T erase(size_t index)
 			{
@@ -336,9 +305,7 @@ namespace CPSC131::MyVector
 			}
 			
 			/**
-			 * Removes all elements (i.e., size=0 and DTORs called)
-			 * 
-			 * Should also reset capacity, if needed
+			 * Removes all elements (i.e., size=0 and DTORs called.
 			*/
 			void clear()
 			{
